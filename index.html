@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Weather & News App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Weather App -->
+    <div class="app weather-app">
+      <div id="search-bar">
+        <input autocomplete="false" id="search-bar-input" type="text" placeholder="Search by City">
+        <button id="search-icon" onclick="getWeather()"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
+
+      <div id="info">
+        <p id="date"></p>
+        <h4 id="city"></h4>
+      </div>
+
+      <div id="temp-img"></div>
+      <p id="description"></p>
+      <div id="temp"></div>
+
+      <div class="extra-info">
+        <div class="col">
+          <div class="info">
+            <h5>Highs</h5>
+            <p id="temp-max"></p>
+          </div>
+        </div>            
+        <div class="col">
+          <div class="info">
+            <h5>Lows</h5>
+            <p id="temp-min"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News App -->
+    <div class="app news-app">
+      <h4>Top Business News</h4>
+      <div id="news" class="news-breadcrumb">
+        <!-- JS will fill news here -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="weather/app.js"></script>
+  <script src="news/app.js"></script>
+</body>
+</html>
+
